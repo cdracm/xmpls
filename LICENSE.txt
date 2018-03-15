@@ -1,0 +1,7 @@
+                    WTH License
+Version 1, March 2018
+
+Copyright (C) 2018 Alexey Kudravtsev
+
+Everyone is free to do the hell they want with this software,
+including but not limited to, controlling nuclear reactors or navigating intercontinental missiles.

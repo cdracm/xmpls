@@ -1,0 +1,29 @@
+## YIKES: SafeFieldUpdater: Concurrent update.
+
+## YIKES: concurrent initialization of guard state
+
+##
+## =====================================================================
+## FastTrack Error
+##
+##          Thread: 2
+##           Blame: x/Application.value_I
+##           Count: 1    (max: 100)
+##    Shadow State: [W=(1:3) R=(1:3) V=[]]
+##  Current Thread: [tid=2    C=[(0:3) (1:0) (2:3) (3:0)]   E=(2:3)]
+##           Class: class x.Application
+##           Field: @02.x/Application.value_I
+##         Message: Write-Read Race
+##     Previous Op: Write by  null
+##     Currrent Op: Read by  Thread-1[tid = 2]
+##           Stack: tools.fasttrack_long.FastTrackTool.fieldError(FastTrackTool.java:753)
+##                  tools.fasttrack_long.FastTrackTool.error(FastTrackTool.java:707)
+##                  tools.fasttrack_long.FastTrackTool.read(FastTrackTool.java:371)
+##                  tools.fasttrack_long.FastTrackTool.access(FastTrackTool.java:308)
+##                  rr.tool.RREventGenerator.readAccess(RREventGenerator.java:146)
+##                  x.Application.__$rr_get_value(Application.java)
+##                  x.Application.__$rr_run__$rr__Original_(Application.java:23)
+##                  x.Application.run(Application.java:21)
+##                  java.lang.Thread.run(Thread.java:748)
+##
+## =====================================================================

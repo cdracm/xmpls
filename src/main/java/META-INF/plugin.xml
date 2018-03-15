@@ -1,0 +1,15 @@
+<idea-plugin>
+    <name>PublicSwearing</name>
+    <description>
+      <![CDATA[
+      This plugin warns about indecent string literals as arguments of methods
+      with parameters annotated with @Nls.
+      ]]>
+    </description>
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection groupPath="Java" language="JAVA" shortName="PublicSwearing"
+                         displayName="Swearing in public arguments"
+                         groupName="Indecent code"
+                         implementationClass="inspection.PublicSwearInspection"/>
+    </extensions>
+</idea-plugin>
